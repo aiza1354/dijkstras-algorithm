@@ -176,7 +176,7 @@ public class Dijkstra {
         graph.get(21).add(new Edge(20, 2, "C.S"));
         graph.get(21).add(new Edge(18, 5, "English"));
 
-        int[] shorestDistances = dijkstra(graph, 0);
-        printDistances(shorestDistances, 0);
+        int[] shortestDistances = dijkstra(graph, 0);
+        printDistances(shortestDistances, 0);
     }
 }
