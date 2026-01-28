@@ -135,7 +135,7 @@ public class Dijkstra {
         graph.get(8).add(new Edge(9, 4, "Art"));
         // from Art
         graph.get(9).add(new Edge(8, 4, "History"));
-        // from Geo
+        // from Geography
         graph.get(10).add(new Edge(1, 5, "Science"));
         graph.get(10).add(new Edge(15, 5, "Drama"));
         graph.get(10).add(new Edge(16, 6, "Lecture theatre"));
@@ -173,9 +173,9 @@ public class Dijkstra {
         graph.get(20).add(new Edge(19, 4, "Music"));
         graph.get(20).add(new Edge(21, 2, "Language"));
         // From Language
-        graph.get(21).add(new Edge(20, 2, "CS"));
-        graph.get(21).add(new Edge(18, 5, "Eng"));
-        // Run the algorithm
+        graph.get(21).add(new Edge(20, 2, "C.S"));
+        graph.get(21).add(new Edge(18, 5, "English"));
+
         int[] shorestDistances = dijkstra(graph, 0);
         printDistances(shorestDistances, 0);
     }
